@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.7 on win32)" generated="20200421 18:26:04.382" rpa="false">
+<suite id="s1" name="ApplyForJob" source="C:\Users\kajetanmellerowicz\PycharmProjects\AvegaAnsok\Tests\ApplyForJob.robot">
+<test id="s1-t1" name="Verify direct job applying functionality at Avega">
+<kw name="Start testCase" library="CommonFunctionality" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url.${env}}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200421 18:26:04.544" level="INFO">Opening browser 'chrome' to base url 'https://www.avegagroup.se'.</msg>
+<status status="PASS" starttime="20200421 18:26:04.544" endtime="20200421 18:26:10.875"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200421 18:26:10.875" endtime="20200421 18:26:15.012"></status>
+</kw>
+<status status="PASS" starttime="20200421 18:26:04.544" endtime="20200421 18:26:15.012"></status>
+</kw>
+<kw name="Click on Jobba har" library="HomePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${JobbaHere}</arg>
+</arguments>
+<msg timestamp="20200421 18:26:15.014" level="INFO">Clicking element 'xpath://a[@class='button icon-arrow-right icon--after button--ghost']'.</msg>
+<status status="PASS" starttime="20200421 18:26:15.013" endtime="20200421 18:26:15.319"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200421 18:26:20.320" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200421 18:26:15.319" endtime="20200421 18:26:20.320"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Vill du bli en av oss</arg>
+</arguments>
+<msg timestamp="20200421 18:26:20.336" level="INFO">Current page contains text 'Vill du bli en av oss'.</msg>
+<status status="PASS" starttime="20200421 18:26:20.320" endtime="20200421 18:26:20.336"></status>
+</kw>
+<status status="PASS" starttime="20200421 18:26:15.013" endtime="20200421 18:26:20.337"></status>
+</kw>
+<kw name="Click on Spontanansok and Ansok nu" library="HomePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SpontanAnsok}</arg>
+</arguments>
+<msg timestamp="20200421 18:26:20.337" level="INFO">Clicking element 'xpath://a[@class='button icon-arrow-right icon--after button--ghost']'.</msg>
+<status status="PASS" starttime="20200421 18:26:20.337" endtime="20200421 18:26:23.428"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200421 18:26:28.429" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200421 18:26:23.428" endtime="20200421 18:26:28.429"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${AnsokNu}</arg>
+</arguments>
+<msg timestamp="20200421 18:26:28.431" level="INFO">Clicking element 'xpath://a[@class='btn btn-huge btn-success btn-embossed btn-block mbl']//span[@class='placeholder'][contains(text(),'Ansök nu')]'.</msg>
+<status status="PASS" starttime="20200421 18:26:28.430" endtime="20200421 18:26:30.833"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200421 18:26:35.834" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200421 18:26:30.833" endtime="20200421 18:26:35.834"></status>
+</kw>
+<status status="PASS" starttime="20200421 18:26:20.337" endtime="20200421 18:26:35.835"></status>
+</kw>
+<kw name="Fill the form" library="HomePage">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Spontanansökan - Stockholm, Göteborg och Malmö</arg>
+</arguments>
+<msg timestamp="20200421 18:26:35.860" level="INFO">Current page contains text 'Spontanansökan - Stockholm, Göteborg och Malmö'.</msg>
+<status status="PASS" starttime="20200421 18:26:35.837" endtime="20200421 18:26:35.861"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${FristNameBox}</arg>
+<arg>${Form.fn}</arg>
+</arguments>
+<msg timestamp="20200421 18:26:35.861" level="INFO">Typing text 'Jan' into text field 'xpath://input[@id='id_first_name']'.</msg>
+<status status="PASS" starttime="20200421 18:26:35.861" endtime="20200421 18:26:36.641"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LastNameBox}</arg>
+<arg>${Form.ln}</arg>
+</arguments>
+<msg timestamp="20200421 18:26:36.641" level="INFO">Typing text 'Havel' into text field 'xpath://input[@id='id_last_name']'.</msg>
+<status status="PASS" starttime="20200421 18:26:36.641" endtime="20200421 18:26:36.716"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${EPostBox}</arg>
+<arg>${Form.ep}</arg>
+</arguments>
+<msg timestamp="20200421 18:26:36.717" level="INFO">Typing text 'abc@yahoo.com' into text field 'xpath://input[@id='id_email']'.</msg>
+<status status="PASS" starttime="20200421 18:26:36.717" endtime="20200421 18:26:36.820"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${TelefonnummerBox}</arg>
+<arg>${Form.tn}</arg>
+</arguments>
+<msg timestamp="20200421 18:26:36.821" level="INFO">Typing text '778990979' into text field 'xpath://*[@id="div_id_phone_number"]/div/div/input'.</msg>
+<status status="PASS" starttime="20200421 18:26:36.820" endtime="20200421 18:26:36.932"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${MeddelandeBox}</arg>
+<arg>${Form.ms}</arg>
+</arguments>
+<msg timestamp="20200421 18:26:36.932" level="INFO">Typing text 'Thanks for considering' into text field 'xpath://textarea[@id='id_message']'.</msg>
+<status status="PASS" starttime="20200421 18:26:36.932" endtime="20200421 18:26:37.081"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${JobLocCheckBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200421 18:26:37.081" endtime="20200421 18:26:37.363"></status>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>${JobLocCheckBox}</arg>
+</arguments>
+<msg timestamp="20200421 18:26:37.365" level="INFO">Selecting checkbox 'xpath://*[@id="id_job_question_1660_1_1"]'.</msg>
+<status status="PASS" starttime="20200421 18:26:37.364" endtime="20200421 18:26:37.441"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${IntegrityBox}</arg>
+</arguments>
+<status status="PASS" starttime="20200421 18:26:37.441" endtime="20200421 18:26:37.730"></status>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>${IntegrityBox}</arg>
+</arguments>
+<msg timestamp="20200421 18:26:37.731" level="INFO">Selecting checkbox 'xpath://*[@id="id_terms"]'.</msg>
+<status status="PASS" starttime="20200421 18:26:37.730" endtime="20200421 18:26:37.812"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${CVUppload}</arg>
+</arguments>
+<msg timestamp="20200421 18:26:37.813" level="INFO">Simulating Mouse Over on element 'xpath://input[@id='id_cv']'.</msg>
+<status status="PASS" starttime="20200421 18:26:37.813" endtime="20200421 18:26:38.095"></status>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<arguments>
+<arg>${CVUppload}</arg>
+<arg>${filePath}</arg>
+</arguments>
+<msg timestamp="20200421 18:26:38.096" level="INFO">Sending C:\Users\kajetanmellerowicz\package.json to browser.</msg>
+<status status="PASS" starttime="20200421 18:26:38.096" endtime="20200421 18:26:38.142"></status>
+</kw>
+<status status="PASS" starttime="20200421 18:26:35.836" endtime="20200421 18:26:38.142"></status>
+</kw>
+<doc>This case verifies the direct application</doc>
+<tags>
+<tag>Functional</tag>
+</tags>
+<status status="PASS" starttime="20200421 18:26:04.543" endtime="20200421 18:26:38.142" critical="yes"></status>
+</test>
+<doc>Direct Job Application Functionality</doc>
+<status status="PASS" starttime="20200421 18:26:04.383" endtime="20200421 18:26:38.144"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Functional</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="ApplyForJob">ApplyForJob</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
